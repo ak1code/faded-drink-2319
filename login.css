@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+}
+.main{
+    display: flex;
+    margin: auto;
+}
+#left{
+    width: 50%;
+}
+#left>img{
+    width: 100%;
+}
+#right{
+    width: 70%;
+    background-image: url("bottom/loginPageBackGroundTexture.jpg")
+}
+#right>div{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    align-self: center;
+}
+p{
+    width: 65%;
+    margin: auto;
+    line-height: 20px;
+    padding-top: 20px;
+    
+}
+button{
+    margin: 30px;
+}
