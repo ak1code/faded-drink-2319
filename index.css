@@ -1,0 +1,234 @@
+body{
+    box-sizing: border-box;
+    background-color:#f2f2f2 ;
+}
+#nav{
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+
+}
+#logo{
+    width: 15%;
+     display: flex;        
+     /* border: 1px solid red; */
+     align-items: center;
+}
+#logo>img{
+    width: 30%;
+    padding: 10px;
+}
+#search{
+    width: 35%;
+    display: flex;
+    /* border: 1px solid red; */
+    
+}
+#login>h3>a{
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+#cart{
+    display: flex;
+    /* border: 1px solid red; */
+}
+#A{
+    position: relative;
+    
+}
+#a{
+    position: absolute;
+    background-color:#f2f2f2;
+    display: none;
+    color: black;
+    border-radius: 10px;
+    
+}
+thead{
+    text-align: justify;
+}
+#table{
+    padding: 20px;
+    width: 600px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#A:hover #a{
+  display: block;
+}
+#input{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(43, 43, 43);
+}
+#button{
+    width:30%;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#product{
+    
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  padding-left: 40px;
+  padding-right: 70px;
+  color: white;
+  background-color: rgb(36, 35, 35);
+}
+#rotate>img{
+    width: 100%;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    padding: 30px 60px 60px 60px;
+ background-color:rgb(36, 36, 161);
+}
+.middle>div{
+    /* border: 1px solid red; */
+    width: 20%;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    line-height: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.middle>div>button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.middle>div>img{
+   width: 150px;
+    
+}
+#no{
+background-color:rgb(36, 36, 161);
+padding: 0%;
+margin: 0%;
+color: white;
+text-align: center;
+padding-top: 30px;
+}
+
+#shedo{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+   background-color: white;
+    text-align: center;
+}
+#shedo>div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 22%;
+}
+#shedo>div>img{
+    width: 100%;
+}
+#shedo>div:nth-child(3){
+    /* border: 1px solid red; */
+    width: 20%;
+    
+   align-self: center;
+}
+#mid2{
+    width: 94%;
+    display: flex;
+    margin: auto;
+}
+#mid2>img{
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+}
+ h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+ #mid3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+ /* background-color: #f2f2f2; */
+}
+#mid3>div{
+    /* border: 1px solid red; */
+    width: 20%;
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    line-height: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#mid3>div>img{
+   width: 150px;
+}
+#mid3>div>button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+#buttom{
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 5px;
+}
+#buttom>img{
+    width: 7%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+#symbol{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin: auto;
+    
+}
+#symbol>img{
+    width: 5%;
+    margin: 10px;
+}
+#bot2{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#bot3{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+#bot4{
+    display: flex;
+    margin: auto;
+  justify-content: center;
+}
+#bot4>img{
+   width: 12%;
+   margin: 10px;
+}
