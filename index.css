@@ -7,19 +7,23 @@ body{
 #nav{
     display: flex;
     background-color: rgb(28, 28, 28);
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: space-around;
     color: white;
     align-items: center;
-
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
 }
 #logo{
     width: 15%;
      display: flex;        
-     /* border: 1px solid red; */
+     border: 1px solid red;
      align-items: center;
+     justify-content: space-between
 }
-#logo>img{
+#logo img{
     width: 30%;
     padding: 10px;
 }
@@ -36,8 +40,18 @@ body{
 }
 #cart{
     display: flex;
+    height: 10px;
+    width: 80px;
+    margin-bottom: 40px;
+    margin-left: 10px;
     /* border: 1px solid red; */
+    
 }
+#cart p {
+    margin: 10px;
+    
+}
+
 #A{
     position: relative; 
 }
@@ -90,8 +104,13 @@ thead{
   padding-right: 70px;
   color: white;
   background-color: rgb(36, 35, 35);
+  position: fixed;
+    top: 85px;
+    z-index: 100;
+    width: 100%;
 }
 #rotate>img{
+    height: 100%;
     width: 100%;
 }
 #middle{

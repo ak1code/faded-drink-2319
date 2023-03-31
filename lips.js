@@ -29,6 +29,7 @@ let arr=[
     let filter=document.getElementById("filter");
     let one=document.getElementById("one");
     let two=document.getElementById("two");
+    let bag=JSON.parse(localStorage.getItem("cart"))||[];
 
     two.addEventListener("change",function(){
         if(two.checked==true){
@@ -97,6 +98,13 @@ let arr=[
 
             cart.append(img,para,price,button);
             right.append(cart);
+
+            button.addEventListener("click",function(){
+                bag.push({...element,quntity:1});
+                console.log(bag)
+                localStorage.setItem("cart",JSON.stringify(bag));
+               
+            })
 
         });
     }
