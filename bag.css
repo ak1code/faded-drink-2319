@@ -1,6 +1,8 @@
 body{
     box-sizing: border-box;
     background-color:#f2f2f2 ;
+    margin: 0%;
+    padding: 0%;
 }
 #nav{
     display: flex;
@@ -83,10 +85,6 @@ thead{
   color: white;
   background-color: rgb(36, 35, 35);
 }
-#rotate>img{
-    width: 100%;
-    height: 320px;
-}
 #move{
     display: flex;
     
@@ -100,96 +98,64 @@ thead{
     text-decoration: none;
 }
 #main{
+    width: 97%;
     display: flex;
     margin: auto;
-}
-#sort{
     border: 1px solid red;
-    text-align: center;
 }
-#sort>select{
-    width: 70%;
-    height: 40px;
-    border-radius: 5px;
-}
+
 #left{
-    width: 30%;
-    /* border: 1px solid red; */
+    width: 50%;
+}
+#h1{
+    border: 1px solid red;
+}
+#bag_summary{
+    width: 100%;
+    border: 1px solid red;
+    
+}
+#bag_summary div{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#bag_summary div img{
+    width: 7%;
+}
+#bag_summary div div{
+    width: 10%;
+   
+    padding: 0px 15px 0px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#bag_summary div p{
+    width: 50%;
 }
 #right{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-left: 40px;
+    width: 50%;
     border: 1px solid red;
-    
 }
-/* #right div{
-    width: 80%;
-    border: 1px solid red;
-    margin: 30px;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#right div>img{
-    width: 60%;
-    
-} */
-#right>div{
+#price{
+    width: 100%;
     /* border: 1px solid red; */
-    width: 300px;
-    margin: 20px;
-    background-color: white;
-    text-align: center;
-    border-radius: 15px;
     
-    height: 420px;
-    line-height: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-#right>div>button{
-    width: 150px;
-    height: 30px;
-    margin: 15px;
-    border-radius: 5px;
-    color: white;
-    background-color: black;
-    align-self: baseline;
-}
-
-#right>div>img{
-   width: 150px;
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-#right>div>p{
-    padding: 0px 10px 0px 10px;
- }
- 
- #filter{
-   
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    background-color: white;
- }
- #filter>div{
-    margin: 10px 0px 10px 50px;
-    width: 200px;
-    height: 50px;
-    border:  1px solid red;
-    font-size: large;
-    
- }
- #filter>div>input{
-    width: 20px;
-    height: 20px;
-    border:  1px solid red;
-    margin: 10px;
- }
- #filter>h1{
+table{
+    width: 95%;
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
- }
+    border: 1px solid red;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+#border{
+    border-top:  1px dashed black;
+    border: 1px solid red;
+}
+
