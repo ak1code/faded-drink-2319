@@ -16,12 +16,18 @@ body{
 #logo{
     width: 15%;
      display: flex;        
-     /* border: 1px solid red; */
+     border: 1px solid red;
      align-items: center;
+     justify-content: space-between;
+     
 }
-#logo>img{
-    width: 30%;
+#logo img{
+    width: 50%;
     padding: 10px;
+}
+#logo a{
+    color: white;
+    text-decoration: none;
 }
 #search{
     width: 35%;
@@ -158,4 +164,19 @@ table{
     border-top:  1px dashed black;
     border: 1px solid red;
 }
-
+@media only screen and (max-width:800px){
+  
+    #main{
+        display: block;
+        margin: auto;
+    }
+    
+    #left{
+        width: 90%;
+        margin: auto;
+    }
+    #right{
+        width:90%;
+        margin: auto;
+    }
+}

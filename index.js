@@ -52,13 +52,31 @@ let arr=[
   {id: 18, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FAirKissPowderPoweredByImagesArtboard1.jpg%3Fv%3D1644813116&w=256&q=75", para:"Air Kiss Powder Lipstick - Air Kiss Powder Lipstick- 01 Mocha Mousse", price: 425, feature:"Crayon",product_type:"POWDER LIPSTICKS"},
   {id: 19, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FArtboard1_c338b616-ee32-4c99-af1a-9501ceda79b6.jpg%3Fv%3D1644813354&w=256&q=75", para:"Air Kiss Powder Lipstick - Air Kiss Powder Lipstick- 05 Strawberry Macaron", price: 425, feature:"Crayon",product_type:"POWDER LIPSTICKS"},
   {id: 20, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2Fsugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg%3Fv%3D1675401557&w=256&q=75", para:"Matte As Hell Crayon Lipstick Minis Set", price: 425, feature:"Crayon",product_type:"Gifts & Sets"},
+  {id: 21, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2F464576762-launch_sugar-la-la-love-18hr-liquid-lipstick-wbg-powered-by-images_01.jpg%3Fv%3D1674489987&w=256&q=75", para:"Limited Edition La La Love 18HR Liquid Lipstick", price: 399, feature:"Crayon",product_type:"Gifts & Sets"},
+  {id: 22, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FShade1_a136addf-e9e1-4537-9b5f-ccad95ff1e65.jpg%3Fv%3D1673627339&w=256&q=75", para:"Limited Edition La La Love 18HR Liquid Lipstick CherryCrush", price: 399, feature:"Crayon",product_type:"Gifts & Sets"},
+  {id: 23, img:"https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0906%2F2558%2Fproducts%2FShade2_71ded7bd-c2aa-4450-913b-bcee9510d594.jpg%3Fv%3D1673627346&w=256&q=75", para:"Limited Edition La La Love 18HR Liquid Lipstick Scarlet Smitten", price: 399, feature:"Crayon",product_type:"Gifts & Sets"},
 
   ]
 
 
      
   let middle=document.getElementById("middle");
+  let input=document.getElementById("input2");
+  let button=document.getElementById("subscribe")
+  let search=document.getElementById("input");
+  let button_search=document.getElementById("button");
 
+ 
+
+
+  
+
+    button.addEventListener("click",function(){
+      if(input.value!==""){
+        console.log("subscribe sucessfull");
+        alert ("subscribe sucessfull")
+      }
+    })
   function display(arr){
 
       arr.forEach(element => {

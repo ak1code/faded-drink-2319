@@ -4,28 +4,42 @@ body{
     margin: 0%;
     background-color:#f2f2f2 ;
 }
-#nav{
+/* #nav{
     display: flex;
     background-color: rgb(28, 28, 28);
     border: 1px solid red;
     justify-content: space-around;
     color: white;
     align-items: center;
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0;
     z-index: 100;
-    width: 100%;
+    width: 100%; */
+/* } */ 
+
+#nav{
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    color: white;
+    align-items: center;
 }
 #logo{
     width: 15%;
      display: flex;        
      border: 1px solid red;
      align-items: center;
-     justify-content: space-between
+     justify-content: space-between;
+     
 }
 #logo img{
-    width: 30%;
+    width: 50%;
     padding: 10px;
+}
+#logo a{
+    color: white;
+    text-decoration: none;
 }
 #search{
     width: 35%;
@@ -104,10 +118,10 @@ thead{
   padding-right: 70px;
   color: white;
   background-color: rgb(36, 35, 35);
-  position: fixed;
+  /* position: fixed;
     top: 85px;
     z-index: 100;
-    width: 100%;
+    width: 100%; */
 }
 #rotate>img{
     height: 100%;
@@ -126,7 +140,7 @@ thead{
 }
 #middle>div{
     /* border: 1px solid red; */
-    width: 20%;
+    width: 300px;
     margin: 10px;
     background-color: white;
     text-align: center;
@@ -206,19 +220,29 @@ padding-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    background-color: white;
     text-align: center;
+    line-height: 25px;
 }
 #shedo>div:nth-child(1){
     /* border: 1px solid red; */
-    width: 22%;
+    width: 300px;
 }
 #shedo>div>img{
     width: 100%;
 }
+
 #shedo>div:nth-child(3){
     /* border: 1px solid red; */
-    width: 20%;
+    width: 200px;
     
    align-self: center;
+}
+#shedo>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 500px;
+    line-height: 22px;
+    align-self: center;
+    
+   
 }
 #mid2{
     width: 94%;
@@ -243,7 +267,7 @@ padding-top: 30px;
 }
 #mid3>div{
     /* border: 1px solid red; */
-    width: 20%;
+    width: 300px;
     margin: 10px;
     background-color: white;
     text-align: center;
@@ -306,4 +330,129 @@ padding-top: 30px;
 #bot4>img{
    width: 12%;
    margin: 10px;
+}
+#email{
+    /* border: 1px solid red; */
+    padding: 20px 0px 100px 0px;
+    text-align: center;
+    background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
+}
+#email #input2{
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+#email button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width:400px) and (max-width:1024px){
+    #product{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        padding-left: 40px;
+        padding-right: 0px;
+        
+    }
+    #mid3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    #mid3 div{
+        width: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #rotate{
+        height: 250px;
+    }
+    #shedo {
+            height: 200px;
+    }
+    #shedo img{
+        height: 100%;
+    }
+    #symbol{
+        width: 100%;
+        border: 1px solid red;
+        justify-content: space-around;
+    }
+    #bot2{
+     display: block;
+    }
+    #bot3{
+        display: block;
+    }
+    #bot4{
+        display: block;
+    }
+   
+    
+}
+@media only screen and (max-width:400px){
+    #product{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        padding-left: 40px;
+        padding-right: 0px;
+        
+    }
+    #mid3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        justify-content: space-around;
+        
+    }
+
+    #mid3 div{
+        width: 250px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #rotate{
+        height: 250px;
+    }
+    #shedo {
+            height: 200px;
+    }
+    #shedo img{
+        height: 100%;
+    }
+    #symbol{
+        width: 100%;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+    }
+    #bot2{
+     display: block;
+    }
+    #bot3{
+        display: block;
+    }
+    #bot4{
+        display: block;
+    }
+    #mid2{
+        display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
+        border: 1px solid red;
+    }
+    #mid2 img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }
