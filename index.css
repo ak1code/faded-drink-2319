@@ -4,18 +4,7 @@ body{
     margin: 0%;
     background-color:#f2f2f2 ;
 }
-/* #nav{
-    display: flex;
-    background-color: rgb(28, 28, 28);
-    border: 1px solid red;
-    justify-content: space-around;
-    color: white;
-    align-items: center;
-    /* position: fixed; */
-    /* top: 0;
-    z-index: 100;
-    width: 100%; */
-/* } */ 
+
 
 #nav{
     display: flex;
@@ -28,7 +17,6 @@ body{
 #logo{
     width: 15%;
      display: flex;        
-     border: 1px solid red;
      align-items: center;
      justify-content: space-between;
      
@@ -44,13 +32,11 @@ body{
 #search{
     width: 35%;
     display: flex;
-    /* border: 1px solid red; */
     
 }
 #login>h3>a{
     color: white;
     text-decoration: none;
-    /* border: 1px solid red; */
 }
 #cart{
     display: flex;
@@ -58,16 +44,17 @@ body{
     width: 80px;
     margin-bottom: 40px;
     margin-left: 10px;
-    /* border: 1px solid red; */
-    
+    cursor: pointer;
 }
 #cart p {
-    margin: 10px;
-    
+    margin: 10px;  
+}
+#search button{
+    cursor: pointer;
 }
 
 #A{
-    position: relative; 
+    position: relative;
 }
 #A>h4>a{
     color: white;
@@ -79,7 +66,6 @@ body{
     display: none;
     color: black;
     border-radius: 10px;
-    
 }
 thead{
     text-align: justify;
@@ -90,17 +76,14 @@ thead{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-/* #make1 p{
-    color:#f2f2f2 ;
-} */
-
 #A:hover #a{
   display: block;
+  
 }
 #input{
     width: 100%;
     height: 50px;
+    color: white;
     background-color: rgb(43, 43, 43);
 }
 #button{
@@ -113,15 +96,12 @@ thead{
     
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid red; */
   padding-left: 40px;
   padding-right: 70px;
   color: white;
   background-color: rgb(36, 35, 35);
-  /* position: fixed;
-    top: 85px;
-    z-index: 100;
-    width: 100%; */
+  cursor: pointer;
+ 
 }
 #rotate>img{
     height: 100%;
@@ -139,20 +119,25 @@ thead{
     overflow-x: auto;
 }
 #middle>div{
-    /* border: 1px solid red; */
+    display: inline-block;
+    animation:roll 3s linear infinite;  
+    flex: 0 0 auto;
+    margin-right: 10px;
+    white-space: nowrap; 
     width: 300px;
-    margin: 10px;
+    margin: 20px;
     background-color: white;
     text-align: center;
     border-radius: 15px;
-    height: 400px;
-    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    align-items: center;
+    line-height: 25px;
+    cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    display: inline-block;
-     animation:roll 3s linear infinite; 
-    flex: 0 0 auto;
-    margin-right: 10px;
-    white-space: nowrap;
+    
 }
 
 @keyframes roll {
@@ -163,44 +148,27 @@ thead{
       transform: translateX(calc(-100px * 3 - 30px));
     }
   }
+
 #middle>div>button{
     width: 150px;
     height: 30px;
+    margin: 0px 25% 5% 25%;                               
     border-radius: 5px;
     color: white;
     background-color: black;
+    align-self: baseline;
+    cursor: pointer;
 }
-
 #middle>div>img{
    width: 150px;
-    
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/* -------------------------- */
-/* .middle {
-    width: 100%;
-    height: 100px;
-    overflow-x: scroll;
-    white-space: nowrap;
-  }
-  
-  .item {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    background-color: #ccc;
-    animation: roll 10s linear infinite;
-  } */
-  
-  /* @keyframes roll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-100px * 3 - 30px));
-    }
-  } */
-  /* ------------------------ */
+
+ #middle>div>p{
+     padding: 0px 10px 0px 10px;
+     
+}
+
 #no{
 background-color:rgb(36, 36, 161);
 padding: 0%;
@@ -215,7 +183,6 @@ padding-top: 30px;
     display: flex;
     margin: auto;
     justify-content: space-between;
-    /* border: 1px solid red; */
     margin-top: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    background-color: white;
@@ -223,7 +190,6 @@ padding-top: 30px;
     line-height: 25px;
 }
 #shedo>div:nth-child(1){
-    /* border: 1px solid red; */
     width: 300px;
 }
 #shedo>div>img{
@@ -231,18 +197,13 @@ padding-top: 30px;
 }
 
 #shedo>div:nth-child(3){
-    /* border: 1px solid red; */
     width: 200px;
-    
    align-self: center;
 }
 #shedo>div:nth-child(2){
-    /* border: 1px solid red; */
     width: 500px;
     line-height: 22px;
     align-self: center;
-    
-   
 }
 #mid2{
     width: 94%;
@@ -253,6 +214,7 @@ padding-top: 30px;
     width: 30%;
     margin: auto;
     border-radius: 10px;
+    cursor: pointer;
 }
  h1{
     text-align: center;
@@ -263,10 +225,8 @@ padding-top: 30px;
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
- /* background-color: #f2f2f2; */
 }
 #mid3>div{
-    /* border: 1px solid red; */
     width: 300px;
     margin: 10px;
     background-color: white;
@@ -274,7 +234,12 @@ padding-top: 30px;
     border-radius: 15px;
     height: 400px;
     line-height: 35px;
+    cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 1s;
+}
+#mid3 div:hover{
+    transform: scale(1.1);
 }
 #mid3>div>img{
    width: 150px;
@@ -285,6 +250,7 @@ padding-top: 30px;
     border-radius: 5px;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
 #buttom{
     background-color: black;
@@ -296,15 +262,12 @@ padding-top: 30px;
 #buttom>img{
     width: 7%;
     margin: auto;
-    /* border: 1px solid red; */
 }
 #symbol{
     display: flex;
     width: 30%;
     justify-content: center;
-    /* border: 1px solid red; */
     margin: auto;
-    
 }
 #symbol>img{
     width: 5%;
@@ -325,14 +288,13 @@ padding-top: 30px;
 #bot4{
     display: flex;
     margin: auto;
-  justify-content: center;
+    justify-content: center;
 }
 #bot4>img{
    width: 12%;
    margin: 10px;
 }
 #email{
-    /* border: 1px solid red; */
     padding: 20px 0px 100px 0px;
     text-align: center;
     background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
@@ -349,9 +311,10 @@ padding-top: 30px;
     color: white;
     background-color: black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-@media only screen and (min-width:400px) and (max-width:1024px){
+@media only screen and (min-width:800px) and (max-width:1024px){
     #product{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -384,7 +347,6 @@ padding-top: 30px;
     }
     #symbol{
         width: 100%;
-        border: 1px solid red;
         justify-content: space-around;
     }
     #bot2{
@@ -399,7 +361,7 @@ padding-top: 30px;
    
     
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:799px){
     #product{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -415,6 +377,9 @@ padding-top: 30px;
         margin: auto;
         justify-content: space-around;
         
+    }
+    #logo h2{
+        display: none;
     }
 
     #mid3 div{
@@ -433,7 +398,6 @@ padding-top: 30px;
     }
     #symbol{
         width: 100%;
-        /* border: 1px solid red; */
         justify-content: space-around;
     }
     #bot2{
@@ -447,9 +411,7 @@ padding-top: 30px;
     }
     #mid2{
         display: grid;
-        
         grid-template-columns: repeat(1,1fr);
-        border: 1px solid red;
     }
     #mid2 img{
         width: 90%;

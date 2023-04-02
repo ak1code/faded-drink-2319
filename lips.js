@@ -43,12 +43,34 @@ let arr=[
     let search=document.getElementById("input");
     let button_search=document.getElementById("button");
     let lipstick=document.getElementById("LIPSTICKS");
+    let Lip_Liner=document.getElementById("Lip_Liner");
+
+    let input=document.getElementById("input2");
+  let button=document.getElementById("subscribe");
+
+    let user=JSON.parse(localStorage.getItem("user"));
+ let login_name=document.getElementById("username");
+
+
+ button.addEventListener("click",function(){
+  if(input.value!==""){     
+    alert ("subscribe successfull")
+  }
+})
+
+
+ if(user==null){
+  login_name.innerText="Login\Register";
+ }else{
+  login_name.innerText=user.first_name;
+ }
+    
 
 
     let bag=JSON.parse(localStorage.getItem("cart"))||[];
 
 
-    button.addEventListener("click",function(){
+    button_search.addEventListener("click",function(){
         let filtered=arr.filter(function(el){
           if(el.para.toLowerCase().includes(search.value.toLowerCase()))
           return true;
@@ -59,6 +81,9 @@ let arr=[
         display(filtered)
       })
 
+      Lip_Liner.addEventListener("click",function(){
+        gotit();
+      })
 
     lipstick.addEventListener("click",function(){
         gotit();
@@ -100,11 +125,16 @@ let arr=[
             let Lip_CreamVal=Lip_Cream.checked;
             let Lip_BalmVal=Lip_Balm.checked;
             let lipstickVal=lipstick.checked;
-
-            var filter1 = arr.filter(x=> (Crayon_LipstickVal == true && x.product_type == Crayon_Lipstick.value) || (Liquid_LipstickVal == true && x.product_type == Liquid_Lipstick.value) || (Lip_GlossVal == true && x.product_type == Lip_Gloss.value) || (Mattle_LipstickVal == true && x.product_type == Mattle_Lipstick.value) || (SCRUBVal == true && x.product_type == SCRUB.value) || (Gifts_SetsVal == true && x.product_type == Gifts_Sets.value) || (Lip_CreamVal == true && x.product_type == Lip_Cream.value) || (Lip_BalmVal == true && x.product_type == Lip_Balm.value) || lipstickVal == true && x.product_type == lipstick.value)
+            let Lip_LinerVal=Lip_Liner.checked;
+            
+            if(Crayon_LipstickVal==false && Liquid_LipstickVal==false && Mattle_LipstickVal==false && Lip_GlossVal==false && SCRUBVal==false && Gifts_SetsVal==false && Lip_CreamVal==false && Lip_BalmVal==false && lipstickVal==false && Lip_LinerVal==false){
+              display(arr)
+            }
+            else{
+            var filter1 = arr.filter(x=> (Crayon_LipstickVal == true && x.product_type == Crayon_Lipstick.value) || (Liquid_LipstickVal == true && x.product_type == Liquid_Lipstick.value) || (Lip_GlossVal == true && x.product_type == Lip_Gloss.value) || (Mattle_LipstickVal == true && x.product_type == Mattle_Lipstick.value) || (SCRUBVal == true && x.product_type == SCRUB.value) || (Gifts_SetsVal == true && x.product_type == Gifts_Sets.value) || (Lip_CreamVal == true && x.product_type == Lip_Cream.value) || (Lip_BalmVal == true && x.product_type == Lip_Balm.value) || (lipstickVal == true && x.product_type == lipstick.value)||(Lip_LinerVal == true && x.product_type == Lip_Liner.value))
             
             display(filter1);
-
+            }
      }
      
 
@@ -122,7 +152,7 @@ let arr=[
         
     })
 
-
+    display(arr)
     function display(arr){
         right.innerHTML=[];
         arr.forEach(element => {
@@ -141,12 +171,24 @@ let arr=[
             right.append(cart);
 
             button.addEventListener("click",function(){
+              if(addclick(element)==true){
+                alert ("allready present in the bag")
+              }
+              else{
                 bag.push({...element,quntity:1});
-                console.log(bag)
+                alert ("added to the bag")
                 localStorage.setItem("cart",JSON.stringify(bag));
-               
+              }
             })
 
         });
     }
-    display(arr)
+    function addclick(element){
+      for(let i=0;i<bag.length; i++){
+        if(element.id==bag[i].id){
+          return true;
+        }
+      }
+       return false;
+    }
+    

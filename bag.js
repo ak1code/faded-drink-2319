@@ -3,6 +3,30 @@ let bag_summary=document.getElementById("bag_summary");
 let final=document.getElementById("final");
 let total=document.getElementById("total");
 
+let user=JSON.parse(localStorage.getItem("user"));
+ let login_name=document.getElementById("username");
+
+ let input=document.getElementById("input2");
+ let button=document.getElementById("subscribe");
+ let place=document.getElementById("place");
+
+ place.addEventListener("click",function(){
+    alert ("order placed successfull")
+ })
+
+ button.addEventListener("click",function(){
+    if(input.value!==""){     
+      alert ("subscribe successfull")
+    }
+  })
+
+
+ if(user==null){
+  login_name.innerText="Login\Register";
+ }else{
+  login_name.innerText=user.first_name;
+ }
+
 
 display(bag)
 
@@ -29,8 +53,8 @@ function display(arr){
         decre.innerText="-";
         quntity.innerText=element.quntity;
         sum+=element.price*element.quntity;
-        final.innerText=sum;
-        total.innerText=sum;
+        final.innerText="₹"+sum+".00";
+        total.innerText="₹"+sum+".00";
         
         div2.append(incre,quntity,decre)
         cart.append(img,para,price,delete1,div2);
