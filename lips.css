@@ -15,7 +15,6 @@ body{
 #logo{
     width: 15%;
      display: flex;        
-     border: 1px solid red;
      align-items: center;
      justify-content: space-between;
      
@@ -31,17 +30,29 @@ body{
 #search{
     width: 35%;
     display: flex;
-    /* border: 1px solid red; */
     
+    
+}
+#search button{
+    cursor: pointer;
 }
 #login>h3>a{
     color: white;
     text-decoration: none;
-    /* border: 1px solid red; */
+  
 }
 #cart{
     display: flex;
-    /* border: 1px solid red; */
+    height: 10px;
+    width: 80px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+    
+}
+#cart p {
+    margin: 10px;  
 }
 #A{
     position: relative; 
@@ -85,15 +96,16 @@ thead{
     
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid red; */
+  
   padding-left: 40px;
   padding-right: 70px;
   color: white;
   background-color: rgb(36, 35, 35);
+  cursor: pointer;
 }
 #rotate{
     width: 100%;
-    border: 1px solid red;
+    
 }
 #rotate>img{
     width: 100%;
@@ -116,7 +128,7 @@ thead{
     margin: auto;
 }
 #sort{
-    /* border: 1px solid red; */
+    
     text-align: center;
 }
 #sort>select{
@@ -126,30 +138,18 @@ thead{
 }
 #left{
     width: 350px;
-    /* border: 1px solid red; */
+   
 }
 #right{
     display: grid;
     grid-template-columns: repeat(3,1fr);
    padding-left: 20px;
-    /* border: 1px solid red; */
     
-}
-/* #right div{
-    width: 80%;
-    border: 1px solid red;
-    margin: 30px;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
+    
 }
 
-#right div>img{
-    width: 60%;
-    
-} */
 #right>div{
-    /* border: 1px solid red; */
+    
     width: 300px;
     margin: 20px;
     background-color: white;
@@ -162,6 +162,11 @@ thead{
     align-items: center;
     line-height: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+    transition: 1s;
+}
+#right div:hover{
+    transform: scale(1.1);
 }
 #right>div>button{
     width: 150px;
@@ -171,7 +176,8 @@ thead{
     color: white;
     background-color: black;
     align-self: baseline;
-    /* border: 1px solid red; */
+    cursor: pointer;
+    
     
 }
 
@@ -195,14 +201,13 @@ thead{
     margin: 10px 0px 10px 50px;
     width: 200px;
     height: 50px;
-    /* border:  1px solid red; */
     font-size: large;
+    cursor: pointer;
     
  }
  #filter>div>input{
     width: 20px;
     height: 20px;
-    /* border:  1px solid red; */
     margin: 10px;
  }
  #filter>h1{
@@ -210,6 +215,70 @@ thead{
     margin-top: 10px;
     margin-bottom: 10px;
  }
+ #buttom{
+    background-color: black;
+    color: white;
+    margin: auto;
+    text-align: center;
+    line-height: 5px;
+}
+#buttom>img{
+    width: 7%;
+    margin: auto;
+}
+#symbol{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+    
+}
+#symbol>img{
+    width: 5%;
+    margin: 10px;
+}
+#bot2{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#bot3{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+#bot4{
+    display: flex;
+    margin: auto;
+  justify-content: center;
+}
+#bot4>img{
+   width: 12%;
+   margin: 10px;
+}
+#email{
+    /* border: 1px solid red; */
+    padding: 20px 0px 100px 0px;
+    text-align: center;
+    background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
+}
+#email #input2{
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    
+}
+#email button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
  @media only screen and (max-width:1024px) and (min-width:800px){
     #rotate>img{
         width: 100%;
@@ -217,22 +286,68 @@ thead{
     }
     #rotate{
         width: 100%;
-        border:  1px solid red;
+
     }
     #right{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    #product{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        padding-left: 40px;
+        padding-right: 0px;
+        
+    }
+    #symbol{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #bot2{
+     display: block;
+    }
+    #bot3{
+        display: block;
+    }
+    #bot4{
+        display: block;
+    }
+   
  }
 
  @media only screen and (max-width:799px) {
 
+    #product{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 10px;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
 
     #right{
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        border:  1px solid red;
         margin: auto;
+    }
+    #logo h2{
+        display: none;
+    }
+    #symbol{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #bot2{
+     display: block;
+    }
+    #bot3{
+        display: block;
+    }
+    #bot4{
+        display: block;
     }
    
  }

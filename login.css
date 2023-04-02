@@ -8,29 +8,51 @@ body{
     margin: auto;
 }
 #left{
-    width: 50%;
+    width: 600px;
 }
 #left>img{
     width: 100%;
 }
 #right{
-    width: 70%;
-    background-image: url("bottom/loginPageBackGroundTexture.jpg")
+    width: 900px;
+    background-image: url("bottom/loginPageBackGroundTexture.jpg");
 }
 #right>div{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     line-height: 50px;
-    align-self: center;
-}
-p{
-    width: 65%;
+    width: 50%;
     margin: auto;
-    line-height: 20px;
-    padding-top: 20px;
-    
+    align-items: center;
 }
+
 button{
     margin: 30px;
+    width: 120px;
+    background-color: black;
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+}
+#right div input{
+    width: 100%;
+    margin: 20px;
+    height: 40px;
+    border-radius: 10px;
+}
+@media only screen and (max-width:800px){
+    .main{
+        display: block;
+    }
+    #right{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #left{
+        width: 90%;
+        margin: auto;
+    }
 }
