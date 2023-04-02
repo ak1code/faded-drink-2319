@@ -15,7 +15,7 @@ body{
 }
 #right{
     width: 900px;
-    background-image: url("bottom/loginPageBackGroundTexture.jpg");
+    background-image: url("website_image/loginPageBackGroundTexture.jpg");
 }
 #right>div{
     display: flex;
